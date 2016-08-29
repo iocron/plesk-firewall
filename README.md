@@ -14,7 +14,7 @@ The Git Way (if you have git installed and configured on your server):
 
 1. `cd /usr/local/psa/var/modules/firewall`
 
-2. `git clone https://github.com/iocron/plesk-firewall.git .`
+2. `git clone https://github.com/iocron/plesk-firewall.git`
 
 3. Execute the script: `bash /usr/local/psa/var/modules/firewall/plesk-firewall/firewall-custom.sh`
 
