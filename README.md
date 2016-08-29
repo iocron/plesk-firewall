@@ -8,7 +8,9 @@ If you have any problems enabling or editing the plesk firewall rulesets, then u
 
 1. Copy the script "firewall-custom.sh" preferably to /usr/local/psa/var/modules/firewall/
 
-2. Execute the script with `bash /usr/local/psa/var/modules/firewall/firewall-custom.sh`
+2. Give the script execute rights: `chmod 700 /usr/local/psa/var/modules/firewall/firewall-custom.sh`
+
+3. Execute the script with `bash /usr/local/psa/var/modules/firewall/firewall-custom.sh`
 
 The Git Way (if you have git installed and configured on your server):
 
@@ -16,7 +18,9 @@ The Git Way (if you have git installed and configured on your server):
 
 2. `git clone https://github.com/iocron/plesk-firewall.git`
 
-3. Execute the script: `bash /usr/local/psa/var/modules/firewall/plesk-firewall/firewall-custom.sh`
+3. `chmod 700 /usr/local/psa/var/modules/firewall/firewall-custom.sh` 
+
+4. `bash /usr/local/psa/var/modules/firewall/plesk-firewall/firewall-custom.sh`
 
 ### Plesk default iptables rule sets
 
