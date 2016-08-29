@@ -1,2 +1,45 @@
 # plesk-firewall
-Plesk default iptables rule sets
+
+## Overview
+
+If you have any problems enabling or editing the plesk firewall rulesets, then use this script instead. Deactivate the firewall in your plesk backend before you execute this script. Any new changes can be made through the new "firewall-custom.sh". Add custom rule sets in "firewall-custom.sh" (optional).
+
+### How to install
+
+1. Copy the script "firewall-custom.sh" preferably to /usr/local/psa/var/modules/firewall/
+
+2. Execute the script with `bash /usr/local/psa/var/modules/firewall/firewall-custom.sh`
+
+The Git Way (if you have git installed and configured on your server):
+
+1. `cd /usr/local/psa/var/modules/firewall`
+
+2. `git clone https://github.com/iocron/plesk-firewall.git .`
+
+3. Execute the script: `bash /usr/local/psa/var/modules/firewall/plesk-firewall/firewall-custom.sh`
+
+### Plesk default iptables rule sets
+
+- Parallels Customer & Business Manager Zahlungsgateways (ACCEPT)
+- Parallels Single Sign-On (ACCEPT)
+- Installationsprogramm für Parallels Produkte (ACCEPT)
+- Plesk-Verwaltungsoberfläche (ACCEPT)
+- WWW-Server (ACCEPT)
+- FTP-Server (ACCEPT)
+- SSH-Server (Secure-Shell-Server) (ACCEPT)
+- SMTP-Server (Übermittlungsport) (ACCEPT)
+- SMTP-Server (für E-Mail-Versand) (ACCEPT)
+- POP3-Server (für E-Mail-Empfang) (ACCEPT)
+- IMAP-Server (für E-Mail-Empfang) (ACCEPT)
+- Passwortänderungsdienst für E-Mail (ACCEPT)
+- MySQL-Server (ACCEPT)
+- PostgreSQL-Server (ACCEPT)
+- Tomcat-Verwaltungsoberfläche (ACCEPT)
+- Samba (Dateifreigabe in Windows-Netzwerken) (ACCEPT)
+- Plesk-VPN (ACCEPT)
+- Domainnamenserver (ACCEPT)
+- IPv6 Neighbor Discovery (ACCEPT)
+- Ping-Dienst (ACCEPT)
+- Systemrichtlinie für eingehenden Traffic (DROP)
+- Systemrichtlinie für ausgehenden Traffic (ACCEPT)
+- Systemrichtlinie zur Weiterleitung von Traffic (DROP)
