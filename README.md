@@ -24,7 +24,7 @@ If you have any problems enabling or editing the plesk firewall rule sets, then 
 
 2. `git clone https://github.com/iocron/plesk-firewall.git`
 
-3. `chmod 700 /usr/local/psa/var/modules/firewall/firewall-custom.sh` 
+3. `chmod 700 /usr/local/psa/var/modules/firewall/plesk-firewall/firewall-custom.sh` 
 
 4. `bash /usr/local/psa/var/modules/firewall/plesk-firewall/firewall-custom.sh`
 
