@@ -16,11 +16,9 @@ If you have any problems enabling or editing the plesk firewall rule sets, then 
 
 5. And add the following line: `@reboot bash /usr/local/psa/var/modules/firewall/firewall-custom.sh`
 
-*(alternatively you can use systemd & inotify (normally preferred, but a bit more complex)*
+*(alternatively you can use systemd & inotify (normally preferred, but a bit more complex))*
 
-------
-
-The Git Way (if you have git installed and configured on your server):
+##### The Git Way (if you have git installed and configured on your server):
 
 1. `cd /usr/local/psa/var/modules/firewall`
 
@@ -36,26 +34,26 @@ The Git Way (if you have git installed and configured on your server):
 
 ### Plesk default iptables rule sets
 
-- Parallels Customer & Business Manager Zahlungsgateways (ACCEPT)
-- Parallels Single Sign-On (ACCEPT)
-- Installationsprogramm für Parallels Produkte (ACCEPT)
-- Plesk-Verwaltungsoberfläche (ACCEPT)
-- WWW-Server (ACCEPT)
-- FTP-Server (ACCEPT)
-- SSH-Server (Secure-Shell-Server) (ACCEPT)
-- SMTP-Server (Übermittlungsport) (ACCEPT)
-- SMTP-Server (für E-Mail-Versand) (ACCEPT)
-- POP3-Server (für E-Mail-Empfang) (ACCEPT)
-- IMAP-Server (für E-Mail-Empfang) (ACCEPT)
-- Passwortänderungsdienst für E-Mail (ACCEPT)
-- MySQL-Server (ACCEPT)
-- PostgreSQL-Server (ACCEPT)
-- Tomcat-Verwaltungsoberfläche (ACCEPT)
-- Samba (Dateifreigabe in Windows-Netzwerken) (ACCEPT)
-- Plesk-VPN (ACCEPT)
-- Domainnamenserver (ACCEPT)
+- Customer & Business Manager payment gateways (ACCEPT)
+- Single Sign-On (ACCEPT)
+- Plesk Installer (ACCEPT)
+- Plesk administrative interface (ACCEPT)
+- WWW server (ACCEPT)
+- FTP server (ACCEPT)
+- SSH (secure shell) server (ACCEPT)
+- SMTP (submission port) server (ACCEPT)
+- SMTP (mail sending) server (ACCEPT)
+- POP3 (mail retrieval) server (ACCEPT)
+- IMAP (mail retrieval) server (ACCEPT)
+- Mail password change service (ACCEPT)
+- MySQL server (ACCEPT)
+- PostgreSQL server (ACCEPT)
+- Tomcat administrative interface (ACCEPT)
+- Samba (file sharing in Windows networks) (ACCEPT)
+- Plesk VPN (ACCEPT)
+- Domain name server (ACCEPT)
 - IPv6 Neighbor Discovery (ACCEPT)
-- Ping-Dienst (ACCEPT)
-- Systemrichtlinie für eingehenden Traffic (DROP)
-- Systemrichtlinie für ausgehenden Traffic (ACCEPT)
-- Systemrichtlinie zur Weiterleitung von Traffic (DROP)
+- Ping service (ACCEPT)
+- System policy for incoming traffic (DROP)
+- System policy for outgoing traffic (ACCEPT)
+- System policy for forwarding of traffic (DROP)
