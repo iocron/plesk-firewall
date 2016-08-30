@@ -14,9 +14,9 @@ If you have any problems enabling or editing the plesk firewall rule sets, then 
 
 4. Open crontab: `crontab -e`
 
-5. And add the following line: `@reboot bash /usr/local/psa/var/modules/firewall/firewall-custom.sh`
+5. And add the following line: `@reboot bash /usr/local/psa/var/modules/firewall/firewall-custom.sh` 
 
-*(alternatively you can use systemd & inotify (normally preferred, but a bit more complex))*
+	*(alternatively instead of the crontab you can use systemd & inotify (normally preferred, but a bit more complex))*
 
 ##### The Git Way (if you have git installed and configured on your server):
 
