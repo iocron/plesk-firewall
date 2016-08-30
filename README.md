@@ -2,7 +2,7 @@
 
 ## Overview
 
-If you have any problems enabling or editing the plesk firewall rulesets, then use this script instead. Deactivate the firewall in your plesk backend before you execute this script. Any new changes can be made through the new "firewall-custom.sh". Add custom rule sets in "firewall-custom.sh" (optional).
+If you have any problems enabling or editing the plesk firewall rule sets, then use this script instead. Deactivate the firewall in your plesk backend before you execute this script. Any new changes can be made through the new "firewall-custom.sh". Add custom rule sets in "firewall-custom.sh" (optional).
 
 ### How to install
 
@@ -11,6 +11,14 @@ If you have any problems enabling or editing the plesk firewall rulesets, then u
 2. Give the script execute rights: `chmod 700 /usr/local/psa/var/modules/firewall/firewall-custom.sh`
 
 3. Execute the script with `bash /usr/local/psa/var/modules/firewall/firewall-custom.sh`
+
+4. Open crontab: `crontab -e`
+
+5. And add the following line: `@reboot bash /usr/local/psa/var/modules/firewall/firewall-custom.sh`
+
+*(alternatively you can use systemd & inotify (normally preferred, but a bit more complex)*
+
+------
 
 The Git Way (if you have git installed and configured on your server):
 
@@ -21,6 +29,10 @@ The Git Way (if you have git installed and configured on your server):
 3. `chmod 700 /usr/local/psa/var/modules/firewall/firewall-custom.sh` 
 
 4. `bash /usr/local/psa/var/modules/firewall/plesk-firewall/firewall-custom.sh`
+
+5. Open crontab: `crontab -e`
+
+6. And add the following line: `@reboot bash /usr/local/psa/var/modules/firewall/plesk-firewall/firewall-custom.sh`
 
 ### Plesk default iptables rule sets
 
